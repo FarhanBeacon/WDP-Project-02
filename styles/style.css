@@ -124,11 +124,43 @@ main {
 footer {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: black;
     color: white;
     height: 100px;
     margin-top: 25px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto;
+    gap: 10px;
+}
+
+.footer-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.fa-brands {
+    color: white;
+}
+
+.fa-hashtag {
+    font-size: 2rem;
+}
+
+.footer-social {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 
@@ -160,7 +192,7 @@ footer {
         justify-content: center;
     }
 
-    .home-welcome {
+    .home-welcome, .contact-content {
         display: block;
         text-align: center;
         padding: 20px;
@@ -174,6 +206,20 @@ footer {
     }
 
     .sideBar {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-description {
+        align-items: start;
+    }
+
+    .fa-hashtag {
         display: none;
     }
   }
